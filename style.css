@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(2, 2, 26, 1) 35%, rgb(20, 21, 22) 100%); 
+}
+.calculator{
+    border: 2px solid rgb(255, 254, 254);
+    background-color:transparent;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow:  rgba(251, 246, 248, 0.622) 3px 8px 15px;
+}
+input{
+    
+    width: 300px;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: right;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-color: transparent;
+}
+input::placeholder{
+    color: #fff;
+}
+.buttons{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    margin: 10px;
+    color: #000;
+    background-color: white;
+    box-shadow: -2px -5px 10px rgba(241, 245, 248, 0.501);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.buttons:hover{
+    border: 2px solid rgb(11, 10, 10);
+    background-color: rgb(150, 150, 229);
+}
+.equal{
+    background-color: rgb(229, 32, 144);
+    color: #fff;
+    box-shadow: -2px -5px 10px rgba(255, 192, 203, 0.573);
+}
+.operator{
+    background-color: rgb(241, 149, 201);
+    box-shadow: -2px -5px 10px rgba(255, 192, 203, 0.547);
+}
+@media  (max-width : 380px) {
+    .calculator{
+        padding: 1rem;
+    }
+    input{
+        
+     width: 200px;
+    border-radius: 0.5rem;
+    margin: 7px;
+    padding: 7px;
+    align-items: center;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 700;
+    }
+    .buttons{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    margin: 7px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    }
+    
+}
+@media  (max-width : 263px) {
+    .calculator{
+        padding: 0.3rem;
+        box-shadow:  rgba(251, 246, 248, 0.622) 0px 3px 5px;
+    }
+    input{
+        
+     width: 130px;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    margin: 4px;
+    padding: 4px;
+    align-items: center;
+    text-align: right;
+    font-size: 15px;
+    font-weight: 600;
+    }
+    button{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: none;
+    margin: 5px;
+    font-size: 7px;
+    font-weight: 500;
+    cursor: pointer;
+     box-shadow: 0px -3px 5px rgba(241, 245, 248, 0.501);
+    }
+    .operator{
+    background-color: rgb(241, 149, 201);
+    box-shadow: 0px -3px 5px rgba(255, 192, 203, 0.547);
+    
+}
+}
+.switch{
+    right: 20px;
+    top: 20px;
+    position: absolute;
+    height: 50px;
+    width: 140px;
+    padding: 5px;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    font-size: 17px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid white;
+    box-shadow: 5px 5px 10px rgba(181, 173, 173, 0.245);
+    cursor: pointer;
+}
+@media  (max-width : 380px) {
+    #switch{
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    height: 50px;
+    width: 80px;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    }
+}
+/*light mode*/
+.light{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FADADD;
+    background-image : linear-gradient(17deg, #FADADD 0%, #fc6c85 74%);
+}
+.lightcal{
+    border: 2px solid rgb(18, 17, 17);
+    background-color:transparent;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.lightinput{
+     width: 300px;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: right;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: transparent;
+    outline: none;
+    }
+    .lightinput::placeholder{
+        color: #000;
+    }
+
+.lightbut{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    margin: 10px;
+    color: black;
+    background-color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+.el{
+background-color:#f60a65cb;
+color: #fff;
+box-shadow: -2px -5px 10px rgba(255, 192, 203, 0.573);
+}
+.ol{
+    background-color: rgba(240, 98, 155, 0.691);
+    box-shadow: 0px -3px 5px rgba(255, 192, 203, 0.547);
+
+}
+.lis{
+    background-color: transparent;
+}
+@media  (max-width : 380px) {
+    .lightcal{
+        padding: 1rem;
+    }
+    .lightinput{
+        
+     width: 200px;
+    border-radius: 0.5rem;
+    margin: 7px;
+    padding: 7px;
+    align-items: center;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 700;
+    }
+    .lightbut{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    margin: 7px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    }
+    
+}
+@media  (max-width : 263px) {
+    .lightcal{
+        padding: 0.3rem;
+        border: 2px solid rgb(18, 17, 17);
+        background-color:transparent;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .lightinput{
+        
+     width: 130px;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    margin: 4px;
+    padding: 4px;
+    align-items: center;
+    text-align: right;
+    font-size: 15px;
+    font-weight: 600;
+    }
+    .lightbut{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: none;
+    margin: 5px;
+    font-size: 7px;
+    font-weight: 500;
+    cursor: pointer;
+     box-shadow: 0px -3px 5px rgba(241, 245, 248, 0.501);
+    }
+    .ol{
+    background-color: rgb(241, 149, 201);
+    box-shadow: 0px -3px 5px rgba(255, 192, 203, 0.547);
+    
+}
+}
+.switchlight{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px rgba(181, 173, 173, 0.245);
+}
+ 
